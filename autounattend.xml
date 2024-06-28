@@ -977,9 +977,6 @@ reg.exe add "HKU\DefaultUser\SOFTWARE\Microsoft\InputPersonalization\TrainedData
 :: Manages and displays the status of ongoing operations, such as file copy, move, delete, etc.
 reg.exe add "HKU\DefaultUser\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager" /v EnthusiastMode /t REG_DWORD /d 1 /f
 
-:: Set File Explorer to Open This PC instead of Quick Access
-reg.exe add "HKU\DefaultUser\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v LaunchTo /t REG_DWORD /d 1 /f
-
 :: Set Display for Performance
 reg.exe add "HKU\DefaultUser\Control Panel\Desktop" /v MenuShowDelay /t REG_DWORD /d 1 /f
 
